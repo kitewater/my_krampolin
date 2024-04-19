@@ -52,7 +52,7 @@ spec:
   rules:
     - http:
         paths:
-          - path: /
+          - path: /mychat
             pathType: Prefix
             backend:
               serviceName: backend
