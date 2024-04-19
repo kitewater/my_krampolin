@@ -60,5 +60,5 @@ spec:
           - path: /mychat/*
             pathType: Prefix
             backend:
-              serviceName: nginx-service
+              serviceName: backend
               servicePort: 8080
