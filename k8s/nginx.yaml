@@ -52,15 +52,13 @@ spec:
   rules:
     - http:
         paths:
-          - path: /mychat/*
-            pathType: Prefix
-            backend:
-              service:
-                name: backend
-                port:
-                  number: 8080
           - path: /
             pathType: Prefix
             backend:
               serviceName: nginx-service
               servicePort: 80
+          - path: /mychat/*
+            pathType: Prefix
+            backend:
+              serviceName: nginx-service
+              servicePort: 8080
