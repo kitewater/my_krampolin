@@ -21,6 +21,8 @@ spec:
               value: Asia/Seoul
             - name: DATABASE_URL
               value: jdbc:mariadb://mariadb:3306/krampoline
+            - name: JAVA_OPTS
+              value: "-Dhttp.proxyHost=krmp-proxy.9rum.cc -Dhttp.proxyPort=3128 -Dhttps.proxyHost=krmp-proxy.9rum.cc -Dhttps.proxyPort=3128"
           resources:
             requests:
               memory: 1Gi
