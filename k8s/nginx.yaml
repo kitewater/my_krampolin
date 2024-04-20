@@ -55,5 +55,5 @@ spec:
           - path: /
             pathType: Prefix
             backend:
-              serviceName: mariadb
-              servicePort: 3306
+              serviceName: backend
+              servicePort: 8080
