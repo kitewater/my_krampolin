@@ -35,7 +35,7 @@ metadata:
 spec:
   containers:
     - name: redis
-      image: redis:latest
+      image: krmp-d2hub-idock.9rum.cc/dev-test/repo_5af63d424ee6:latest
       command:
         - redis-server
         - "/redis-master/redis.conf"
