@@ -1,5 +1,7 @@
 # Microsoft Container Registry에서 제공하는 Java 17의 Base 이미지 선택
-FROM krmp-d2hub-idock.9rum.cc/goorm/openjdk:17-slim
+FROM mcr.microsoft.com/openjdk/jdk:17-ubuntu
+
+#krmp-d2hub-idock.9rum.cc/goorm/openjdk:17-slim
 #mcr.microsoft.com/openjdk/jdk:17-ubuntu
 
 # 이미지 내에서 애플리케이션 파일을 보관할 디렉토리 생성 및 설정
