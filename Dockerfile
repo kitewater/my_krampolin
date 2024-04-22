@@ -8,6 +8,6 @@ WORKDIR /app
 # 빌드 결과물인 JAR 파일을 Docker 이미지 안으로 복사
 COPY ./build/libs/roulette-0.0.1-SNAPSHOT.jar /app/
 
-RUN --name some-redis -d redis
+
 # 컨테이너가 시작될 때 실행할 명령 설정
 CMD ["java", "-jar", "/app/roulette-0.0.1-SNAPSHOT.jar"]
